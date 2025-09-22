@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Font Size System Test</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Custom font size utilities */
+      .text-xs {
+        font-size: 0.75rem;
+        line-height: 1rem;
+      }
+      .text-sm {
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+      }
+      .text-base {
+        font-size: 1rem;
+        line-height: 1.5rem;
+      }
+      .text-lg {
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+      }
+      .text-xl {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+      }
+      .text-2xl {
+        font-size: 1.5rem;
+        line-height: 2rem;
+      }
+      .text-3xl {
+        font-size: 1.875rem;
+        line-height: 2.25rem;
+      }
+      .text-4xl {
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+      }
+      .text-5xl {
+        font-size: 3rem;
+        line-height: 1;
+      }
+      .text-6xl {
+        font-size: 3.75rem;
+        line-height: 1;
+      }
+      .text-7xl {
+        font-size: 4.5rem;
+        line-height: 1;
+      }
+      .text-8xl {
+        font-size: 6rem;
+        line-height: 1;
+      }
+      .text-9xl {
+        font-size: 8rem;
+        line-height: 1;
+      }
+
+      /* Display sizes */
+      .text-display-xs {
+        font-size: 2.5rem;
+        line-height: 1.1;
+        font-weight: 700;
+      }
+      .text-display-sm {
+        font-size: 3.5rem;
+        line-height: 1.1;
+        font-weight: 700;
+      }
+      .text-display-md {
+        font-size: 4.5rem;
+        line-height: 1.1;
+        font-weight: 700;
+      }
+      .text-display-lg {
+        font-size: 6rem;
+        line-height: 1.1;
+        font-weight: 700;
+      }
+      .text-display-xl {
+        font-size: 8rem;
+        line-height: 1.1;
+        font-weight: 700;
+      }
+
+      /* Fluid sizes */
+      .text-fluid-sm {
+        font-size: clamp(0.75rem, 2.5vw + 0.75rem, 0.875rem);
+        line-height: 1.5;
+      }
+      .text-fluid-base {
+        font-size: clamp(0.875rem, 2.5vw + 0.875rem, 1rem);
+        line-height: 1.5;
+      }
+      .text-fluid-lg {
+        font-size: clamp(1rem, 2.5vw + 1rem, 1.125rem);
+        line-height: 1.5;
+      }
+      .text-fluid-xl {
+        font-size: clamp(1.125rem, 2.5vw + 1.125rem, 1.25rem);
+        line-height: 1.5;
+      }
+      .text-fluid-2xl {
+        font-size: clamp(1.25rem, 2.5vw + 1.25rem, 1.5rem);
+        line-height: 1.5;
+      }
+      .text-fluid-3xl {
+        font-size: clamp(1.5rem, 2.5vw + 1.5rem, 1.875rem);
+        line-height: 1.5;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 p-8">
+    <div class="max-w-6xl mx-auto space-y-12">
+      <!-- Standard Font Sizes -->
+      <section class="bg-white p-8 rounded-lg shadow-md">
+        <h2 class="text-3xl font-bold mb-6 text-gray-800">
+          Standard Font Sizes
+        </h2>
+        <div class="space-y-4">
+          <div class="text-9xl text-gray-900">9xl - 8rem (128px)</div>
+          <div class="text-8xl text-gray-800">8xl - 6rem (96px)</div>
+          <div class="text-7xl text-gray-700">7xl - 4.5rem (72px)</div>
+          <div class="text-6xl text-gray-600">6xl - 3.75rem (60px)</div>
+          <div class="text-5xl text-gray-500">5xl - 3rem (48px)</div>
+          <div class="text-4xl text-gray-400">4xl - 2.25rem (36px)</div>
+          <div class="text-3xl text-gray-300">3xl - 1.875rem (30px)</div>
+          <div class="text-2xl text-gray-200">2xl - 1.5rem (24px)</div>
+          <div class="text-xl text-gray-100">xl - 1.25rem (20px)</div>
+          <div class="text-lg text-gray-50">lg - 1.125rem (18px)</div>
+          <div class="text-base text-gray-900">base - 1rem (16px)</div>
+          <div class="text-sm text-gray-800">sm - 0.875rem (14px)</div>
+          <div class="text-xs text-gray-700">xs - 0.75rem (12px)</div>
+        </div>
+      </section>
+
+      <!-- Display Font Sizes -->
+      <section class="bg-white p-8 rounded-lg shadow-md">
+        <h2 class="text-3xl font-bold mb-6 text-gray-800">
+          Display Font Sizes
+        </h2>
+        <div class="space-y-4">
+          <div class="text-display-xl text-primary-6">
+            Display XL - 8rem (128px)
+          </div>
+          <div class="text-display-lg text-primary-5">
+            Display LG - 6rem (96px)
+          </div>
+          <div class="text-display-md text-primary-4">
+            Display MD - 4.5rem (72px)
+          </div>
+          <div class="text-display-sm text-primary-3">
+            Display SM - 3.5rem (56px)
+          </div>
+          <div class="text-display-xs text-primary-2">
+            Display XS - 2.5rem (40px)
+          </div>
+        </div>
+      </section>
+
+      <!-- Fluid Font Sizes -->
+      <section class="bg-white p-8 rounded-lg shadow-md">
+        <h2 class="text-3xl font-bold mb-6 text-gray-800">
+          Fluid Font Sizes (Responsive)
+        </h2>
+        <p class="text-sm text-gray-600 mb-4">
+          These sizes scale with viewport width - try resizing your browser
+          window!
+        </p>
+        <div class="space-y-4">
+          <div class="text-fluid-3xl text-accent-6">
+            Fluid 3XL - Scales from 1.5rem to 1.875rem
+          </div>
+          <div class="text-fluid-2xl text-accent-5">
+            Fluid 2XL - Scales from 1.25rem to 1.5rem
+          </div>
+          <div class="text-fluid-xl text-accent-4">
+            Fluid XL - Scales from 1.125rem to 1.25rem
+          </div>
+          <div class="text-fluid-lg text-accent-3">
+            Fluid LG - Scales from 1rem to 1.125rem
+          </div>
+          <div class="text-fluid-base text-accent-2">
+            Fluid Base - Scales from 0.875rem to 1rem
+          </div>
+          <div class="text-fluid-sm text-accent-1">
+            Fluid SM - Scales from 0.75rem to 0.875rem
+          </div>
+        </div>
+      </section>
+
+      <!-- Typography Examples -->
+      <section class="bg-white p-8 rounded-lg shadow-md">
+        <h2 class="text-3xl font-bold mb-6 text-gray-800">
+          Typography Examples
+        </h2>
+        <div class="space-y-6">
+          <div>
+            <h1 class="text-display-sm text-gray-900 mb-2">Hero Heading</h1>
+            <p class="text-lg text-gray-600">
+              This is a large paragraph that demonstrates the text-lg size with
+              proper line height for readability.
+            </p>
+          </div>
+
+          <div>
+            <h2 class="text-4xl text-gray-800 mb-2">Section Heading</h2>
+            <p class="text-base text-gray-600">
+              This is a standard paragraph using text-base size. It provides
+              good readability for body text.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="text-2xl text-gray-700 mb-2">Subsection Heading</h3>
+            <p class="text-sm text-gray-500">
+              This is a small paragraph using text-sm size, perfect for captions
+              or secondary information.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Color Integration -->
+      <section class="bg-white p-8 rounded-lg shadow-md">
+        <h2 class="text-3xl font-bold mb-6 text-gray-800">
+          Font Sizes with Custom Colors
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="space-y-3">
+            <div class="text-4xl text-primary-6">Primary 4XL</div>
+            <div class="text-3xl text-secondary-6">Secondary 3XL</div>
+            <div class="text-2xl text-accent-6">Accent 2XL</div>
+            <div class="text-xl text-success-6">Success XL</div>
+            <div class="text-lg text-warning-6">Warning LG</div>
+          </div>
+          <div class="space-y-3">
+            <div class="text-base text-error-6">Error Base</div>
+            <div class="text-sm text-primary-5">Primary SM</div>
+            <div class="text-xs text-secondary-4">Secondary XS</div>
+            <div class="text-display-xs text-accent-7">Display XS</div>
+            <div class="text-fluid-lg text-success-5">Fluid LG</div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

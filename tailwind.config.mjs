@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
-import colorGenerator from './plugins/colorGenerator.mjs';
+import colorGenerator from './plugins/colors/colorGenerator.mjs';
+import fontSizeGenerator from './plugins/fontSize/fontSizeGenerator.mjs';
 
 const config = {
   content: [
@@ -16,6 +17,7 @@ const config = {
   },
   plugins: [
     colorGenerator,
+    fontSizeGenerator,
     function ({ addUtilities, theme }) {
       const newUtilities = {
         '.text-gradient': {

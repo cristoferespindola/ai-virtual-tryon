@@ -9,6 +9,8 @@ to generate an image simulating the user wearing the clothing.
 
 - 🎨 **Custom Color System**: Implemented a custom Tailwind CSS plugin that
   generates color scales (1-10) following Tailwind's logic
+- 📏 **Custom Font Size System**: Added a comprehensive font-size system with
+  standard, responsive, fluid, and display sizes
 - 🔧 **React Hook Form Integration**: Added form validation with Zod schemas
 - 🎯 **Modular Architecture**: Refactored into reusable components and custom
   hooks
@@ -151,8 +153,10 @@ Follow these steps to set up and run the application locally:
 │   └── types.ts           # TypeScript type definitions
 ├── plugins/               # Tailwind CSS plugins
 │   ├── colorGenerator.mjs # Custom color system plugin
+│   ├── fontSizeGenerator.mjs # Custom font-size system plugin
 │   ├── colors.mjs         # Base color definitions
-│   └── README.md          # Color system documentation
+│   ├── README.md          # Color system documentation
+│   └── FONT_SIZE_GUIDE.md # Font-size system documentation
 ├── services/              # API services
 │   └── image.ts           # Image processing service
 ├── ui/                    # UI components
@@ -179,6 +183,44 @@ Each color generates classes like: `bg-primary-6`, `text-primary-6`,
 `border-primary-6`, etc.
 
 For detailed documentation, see `plugins/README.md`.
+
+## Custom Font Size System
+
+This project includes a comprehensive font-size system with multiple size
+categories:
+
+### Standard Sizes
+
+- **Basic**: `xs`, `sm`, `base`, `lg`, `xl`, `2xl`, `3xl`, `4xl`, `5xl`, `6xl`
+- **Extended**: `7xl`, `8xl`, `9xl` (for very large text)
+
+### Display Sizes
+
+- **Hero Text**: `display-xs`, `display-sm`, `display-md`, `display-lg`,
+  `display-xl`
+- **Features**: Bold weight, tight line-height, perfect for headlines
+
+### Fluid Sizes
+
+- **Responsive**: `fluid-sm`, `fluid-base`, `fluid-lg`, `fluid-xl`, `fluid-2xl`,
+  `fluid-3xl`
+- **Features**: Scale with viewport width using CSS `clamp()`
+
+### Usage Examples
+
+```html
+<!-- Standard sizes -->
+<h1 class="text-4xl">Main Heading</h1>
+<p class="text-base">Body text</p>
+
+<!-- Display sizes -->
+<h1 class="text-display-lg">Hero Heading</h1>
+
+<!-- Fluid sizes -->
+<h1 class="text-fluid-3xl">Responsive Heading</h1>
+```
+
+For detailed documentation, see `plugins/FONT_SIZE_GUIDE.md`.
 
 ## Contributing
 
