@@ -1,9 +1,45 @@
 # AI Virtual Try-On Application
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20App-blue?style=for-the-badge&logo=vercel)](https://ai-virtual-tryon-chi.vercel.app/)
+[![Next.js](https://img.shields.io/badge/Next.js-15-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-3.4-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
+[![Google Gemini](https://img.shields.io/badge/Google%20Gemini-2.0%20Flash-orange?style=for-the-badge&logo=google)](https://ai.google.dev/gemini-api)
+
 This is a modern web application built with Next.js that allows users to
 virtually try on clothing items using AI. Users upload a photo of themselves and
 a photo of a clothing item, and the application leverages the Google Gemini API
 to generate an image simulating the user wearing the clothing.
+
+## Demo
+
+🚀 **Live Demo**:
+[https://ai-virtual-tryon-chi.vercel.app/](https://ai-virtual-tryon-chi.vercel.app/)
+
+Experience the AI Virtual Try-On application in action! Upload your photo and a
+clothing item to see how it looks on you using Google Gemini's advanced image
+generation capabilities.
+
+### 🎯 How it works:
+
+1. **Upload Your Photo** - Take or upload a clear photo of yourself
+2. **Upload Clothing Item** - Select an image of the clothing you want to try on
+3. **AI Processing** - Google Gemini 2.0 Flash generates the virtual try-on
+4. **See Results** - View how the clothing looks on you!
+
+> 💡 **Pro Tip**: For best results, use clear, front-facing photos with good
+> lighting
+
+## 🌟 Key Features
+
+- 🤖 **AI-Powered**: Uses Google Gemini 2.0 Flash for high-quality image
+  generation
+- 📱 **Responsive Design**: Works perfectly on desktop and mobile devices
+- 🎨 **Modern UI**: Clean, intuitive interface with custom color system
+- ⚡ **Fast Processing**: Optimized for quick image generation
+- 🔒 **Privacy-Focused**: Images are processed securely and not stored
+- 📸 **Image Previews**: See your uploads before processing
+- 🎯 **Smart Validation**: Built-in form validation with helpful error messages
 
 ## ✨ Recent Updates
 
@@ -49,7 +85,7 @@ to generate an image simulating the user wearing the clothing.
 
 Before you begin, ensure you have the following installed:
 
-- [Node.js](https://nodejs.org/) (v18.x or later recommended)
+- [Node.js](https://nodejs.org/) (v22.x or later recommended)
 - [npm](https://www.npmjs.com/) (usually comes with Node.js)
 - A **Google Gemini API Key**: You can obtain one from
   [Google AI Studio](https://aistudio.google.com/app/apikey).
