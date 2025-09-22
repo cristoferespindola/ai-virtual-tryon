@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Gemini Ai tryon',
-  description: 'Gemini Ai tryon starter code',
+  title: 'Ai Virtual Try-On',
+  description: 'Ai Virtual Try-On',
 };
 
 export default function RootLayout({
